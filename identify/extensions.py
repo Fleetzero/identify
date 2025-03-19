@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 EXTENSIONS = {
     'adoc': {'text', 'asciidoc'},
     'ai': {'binary', 'adobe-illustrator'},
@@ -27,6 +28,7 @@ EXTENSIONS = {
     'c++': {'text', 'c++'},
     'c++m': {'text', 'c++'},
     'cc': {'text', 'c++'},
+    'ccxml': {'text', 'xml'},
     'ccm': {'text', 'c++'},
     'cfg': {'text'},
     'chs': {'text', 'c2hs'},
@@ -142,6 +144,7 @@ EXTENSIONS = {
     'kml': {'text', 'kml', 'xml'},
     'kt': {'text', 'kotlin'},
     'kts': {'text', 'kotlin'},
+    'launch': {'text', 'xml'},
     'lean': {'text', 'lean'},
     'lektorproject': {'text', 'ini', 'lektorproject'},
     'less': {'text', 'less'},
@@ -244,6 +247,7 @@ EXTENSIONS = {
     'styl': {'text', 'stylus'},
     'sv': {'text', 'system-verilog'},
     'svelte': {'text', 'svelte'},
+    'svd': {'text', 'xml'},
     'svg': {'text', 'image', 'svg', 'xml'},
     'svh': {'text', 'system-verilog'},
     'swf': {'binary', 'swf'},
@@ -329,6 +333,8 @@ NAMES = {
     '.clang-tidy': EXTENSIONS['yaml'],
     '.codespellrc': EXTENSIONS['ini'] | {'codespellrc'},
     '.coveragerc': EXTENSIONS['ini'] | {'coveragerc'},
+    '.cproject': EXTENSIONS['xml'],
+    '.ccsproject': EXTENSIONS['xml'],
     '.cshrc': EXTENSIONS['csh'],
     '.csslintrc': EXTENSIONS['json'] | {'csslintrc'},
     '.dockerignore': {'text', 'dockerignore'},
@@ -392,6 +398,7 @@ NAMES = {
     'PKGBUILD': {'text', 'bash', 'pkgbuild', 'alpm'},
     'poetry.lock': EXTENSIONS['toml'],
     'pom.xml': EXTENSIONS['pom'],
+    '.project': EXTENSIONS['xml'],
     'pylintrc': EXTENSIONS['ini'] | {'pylintrc'},
     'README': EXTENSIONS['txt'],
     'Rakefile': EXTENSIONS['rb'],
